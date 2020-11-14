@@ -1,1 +1,3 @@
 node_modules/
+.devcontainer/id_ed25519
+.devcontainer/id_ed25519.pub

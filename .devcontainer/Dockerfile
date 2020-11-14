@@ -4,6 +4,9 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:${VARIANT}
 
 COPY .zshrc /root/.zshrc
 
+COPY id_ed25519 /root/.ssh/id_ed25519
+COPY id_ed25519.pub /root/.ssh/id_ed25519.pub
+
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
